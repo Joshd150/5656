@@ -25,157 +25,157 @@ export const EXPANSION_TEAMS: Record<string, ExpansionTeam> = {
   "Antlers": {
     name: "Antlers",
     colors: { primary: "Green", secondary: "White", tertiary: "Brown" },
-    logoId: 1 // Default to first NFL team's logo system
+    logoId: 1001 // Custom expansion team logo ID
   },
   "Armadillos": {
     name: "Armadillos", 
     colors: { primary: "Red", secondary: "Gold", tertiary: "Black" },
-    logoId: 2
+    logoId: 1002
   },
   "Aviators": {
     name: "Aviators",
     colors: { primary: "Black", secondary: "Blue", tertiary: "White" },
-    logoId: 3
+    logoId: 1003
   },
   "Bisons": {
     name: "Bisons",
     colors: { primary: "Yellow", secondary: "Orange", tertiary: "Blue" },
-    logoId: 4
+    logoId: 1004
   },
   "Black Knights": {
     name: "Black Knights",
     colors: { primary: "Black", secondary: "White", tertiary: "Red" },
-    logoId: 5
+    logoId: 1005
   },
   "Blues": {
     name: "Blues",
     colors: { primary: "Blue", secondary: "White", tertiary: "Black" },
-    logoId: 6
+    logoId: 1006
   },
   "Bulls": {
     name: "Bulls",
     colors: { primary: "White", secondary: "Blue", tertiary: "Yellow" },
-    logoId: 7
+    logoId: 1007
   },
   "Caps": {
     name: "Caps",
     colors: { primary: "White", secondary: "Blue", tertiary: "Red" },
-    logoId: 8
+    logoId: 1008
   },
   "Condors": {
     name: "Condors",
     colors: { primary: "White", secondary: "Purple", tertiary: "Black" },
-    logoId: 9
+    logoId: 1009
   },
   "Desperados": {
     name: "Desperados",
     colors: { primary: "Black", secondary: "Grey", tertiary: "Red" },
-    logoId: 10
+    logoId: 1010
   },
   "Dragons": {
     name: "Dragons",
     colors: { primary: "Red", secondary: "Black", tertiary: "White" },
-    logoId: 11
+    logoId: 1011
   },
   "Dreadnoughts": {
     name: "Dreadnoughts",
     colors: { primary: "Blue", secondary: "Yellow", tertiary: "White" },
-    logoId: 12
+    logoId: 1012
   },
   "Elks": {
     name: "Elks",
     colors: { primary: "Blue", secondary: "Yellow", tertiary: "White" },
-    logoId: 13
+    logoId: 1013
   },
   "Golden Eagles": {
     name: "Golden Eagles",
     colors: { primary: "Red", secondary: "Green", tertiary: "White" },
-    logoId: 14
+    logoId: 1014
   },
   "Huskies": {
     name: "Huskies",
     colors: { primary: "Blue", secondary: "Black", tertiary: "White" },
-    logoId: 15
+    logoId: 1015
   },
   "Lumberjacks": {
     name: "Lumberjacks",
     colors: { primary: "Black", secondary: "Red", tertiary: "White" },
-    logoId: 16
+    logoId: 1016
   },
   "Monarchs": {
     name: "Monarchs",
     colors: { primary: "Blue", secondary: "White", tertiary: "Red" },
-    logoId: 17
+    logoId: 1017
   },
   "Mounties": {
     name: "Mounties",
     colors: { primary: "Navy", secondary: "Mustard", tertiary: "Red" },
-    logoId: 18
+    logoId: 1018
   },
   "Night Hawks": {
     name: "Night Hawks",
     colors: { primary: "Blue", secondary: "Grey", tertiary: "Black" },
-    logoId: 19
+    logoId: 1019
   },
   "Orbits": {
     name: "Orbits",
     colors: { primary: "Blue", secondary: "Grey", tertiary: "White" },
-    logoId: 20
+    logoId: 1020
   },
   "Pioneers": {
     name: "Pioneers",
     colors: { primary: "Brown", secondary: "Orange", tertiary: "White" },
-    logoId: 21
+    logoId: 1021
   },
   "Redwoods": {
     name: "Redwoods",
     colors: { primary: "Green", secondary: "White", tertiary: "Brown" },
-    logoId: 22
+    logoId: 1022
   },
   "River Hogs": {
     name: "River Hogs",
     colors: { primary: "Navy", secondary: "Blue", tertiary: "White" },
-    logoId: 23
+    logoId: 1023
   },
   "Sentinels": {
     name: "Sentinels",
     colors: { primary: "Blue", secondary: "Grey", tertiary: "Black" },
-    logoId: 24
+    logoId: 1024
   },
   "Shamrocks": {
     name: "Shamrocks",
     colors: { primary: "Green", secondary: "White" },
-    logoId: 25
+    logoId: 1025
   },
   "Snowhawks": {
     name: "Snowhawks",
     colors: { primary: "White", secondary: "Grey", tertiary: "Light Blue" },
-    logoId: 26
+    logoId: 1026
   },
   "Steamers": {
     name: "Steamers",
     colors: { primary: "Black", secondary: "Brown", tertiary: "White" },
-    logoId: 27
+    logoId: 1027
   },
   "Thunderbirds": {
     name: "Thunderbirds",
     colors: { primary: "Red", secondary: "White", tertiary: "Orange" },
-    logoId: 28
+    logoId: 1028
   },
   "Tigers": {
     name: "Tigers",
     colors: { primary: "Black", secondary: "Orange", tertiary: "White" },
-    logoId: 29
+    logoId: 1029
   },
   "Voyagers": {
     name: "Voyagers",
     colors: { primary: "Blue", secondary: "White", tertiary: "Yellow" },
-    logoId: 30
+    logoId: 1030
   },
   "Wizards": {
     name: "Wizards",
     colors: { primary: "Blue", secondary: "Yellow", tertiary: "White" },
-    logoId: 31
+    logoId: 1031
   }
 };
 

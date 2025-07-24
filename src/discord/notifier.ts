@@ -19,14 +19,14 @@ interface SnallabotNotifier {
 
 
 function decideResult(homeUsers: UserId[], awayUsers: UserId[]) {
-  if (homeUsers.length > 0 && awayUsers.length > 0) {
-    return SimResult.FAIR_SIM
-  }
-  if (homeUsers.length > 0) {
+  if (homeUsers.length > 0 && awayUsers.length === 0) {
     return SimResult.FORCE_WIN_HOME
   }
-  if (awayUsers.length > 0) {
+  if (awayUsers.length > 0 && homeUsers.length === 0) {
     return SimResult.FORCE_WIN_AWAY
+  }
+  if (homeUsers.length > 0 && awayUsers.length > 0) {
+    return SimResult.FAIR_SIM
   }
   throw Error("we should not have gotten here!")
 }

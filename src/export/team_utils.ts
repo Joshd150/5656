@@ -8,7 +8,8 @@ import {
   getTeamDisplayName, 
   getTeamLogoId,
   autoDetectExpansionTeams,
-  EXPANSION_TEAMS
+  EXPANSION_TEAMS,
+  getExpansionTeamByName
 } from './expansion_teams';
 
 /**
@@ -177,4 +178,40 @@ export function getTeamColors(team: Team): { primary: string; secondary: string;
     primary: `#${team.primaryColor?.toString(16).padStart(6, '0') || '000000'}`,
     secondary: `#${team.secondaryColor?.toString(16).padStart(6, '0') || 'FFFFFF'}`
   };
+}
+
+/**
+ * Gets the logo file path for a team (expansion or original)
+ * This provides the actual logo file location for serving
+ */
+export function getTeamLogoPath(teamId: number, originalLogoId: number): string {
+  const mapping = getExpansionTeamMapping(teamId);
+  if (mapping) {
+    const expansionTeam = getExpansionTeamByName(mapping.expansionName);
+    if (expansionTeam) {
+      // Return path to expansion team logo
+      const sanitizedName = mapping.expansionName.toLowerCase().replace(/\s+/g, '_');
+      return `/assets/expansion_logos/${sanitizedName}_logo.png`;
+    }
+  }
+  // Return path to original NFL team logo
+  return `/assets/nfl_logos/${originalLogoId}.png`;
+}
+
+/**
+ * Gets the logo URL for web serving
+ */
+export function getTeamLogoUrl(teamId: number, originalLogoId: number, baseUrl?: string): string {
+  const mapping = getExpansionTeamMapping(teamId);
+  if (mapping) {
+    const expansionTeam = getExpansionTeamByName(mapping.expansionName);
+    if (expansionTeam) {
+      const sanitizedName = mapping.expansionName.toLowerCase().replace(/\s+/g, '_');
+      const base = baseUrl || '';
+      return `${base}/assets/expansion_logos/${sanitizedName}_logo.png`;
+    }
+  }
+  // Return original NFL team logo URL
+  const base = baseUrl || '';
+  return `${base}/assets/nfl_logos/${originalLogoId}.png`;
 }

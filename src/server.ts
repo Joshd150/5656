@@ -8,11 +8,13 @@ import twitchRouter from "./twitch-notifier/routes"
 import connectionsRouter from "./connections/routes"
 import debugRouter from "./debug/routes"
 import dashboard from "./dashboard/routes"
+import { createLogoServingMiddleware } from "./assets/logo_handler"
 
 const app = new Koa()
 
 app
   .use(serve(path.join(__dirname, 'public')))
+  .use(createLogoServingMiddleware())
   .use(bodyParser({ enableTypes: ["json", "form"], encoding: "utf-8", jsonLimit: "100mb" }))
   .use(async (ctx, next) => {
     try {
